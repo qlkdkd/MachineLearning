@@ -130,7 +130,74 @@
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/4a1461fc-df65-46a2-9171-54fe270f0e5a)
 * 입력값: 1개, 은닉층: 2개(1단계: 25개, 2단계: 15개), 출력층: 1개($a$가 '1'일 확률)
 * $a^{[1]}$은 25개의 값을 가진 벡터이다.
+  
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/d06984d3-fce6-4510-97bc-01fd98007d95)
 * $a^{[2]}$는 15개의 값을 가진 벡터이다. 이는 계속 활용된다.
+  
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/e4989214-1bc5-493e-a38e-398d9fed5e02)
+* 결과 $\mathbf{a}^{[3]}$은 $f(x)$라고 써도 된다. 값은 0~1 사이에서 나온다.
+* 그동안 써 왔던 계산 방법을 **'순방향 전파'** 라고 한다. 그 반대 방향은 '역방향 전파'라고 한다.
+* 보통 출력값으로 가까워질 때 뉴런의 개수는 점점 감소하는 경향이 있다.
+
+---
+
+## Inference in Code
+### 예시: Coffee roasting
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/d72f5b99-403c-434d-89d1-86e0a49ec0ba)
+* x축: 온도, y축: 시간, X: 좋은 커피, O: 나쁜 커피
+* 삼각형 내: 맛이 좋음
+* 온도가 낮음 || 시간이 짧음: 덜 조리됨, 온도가 높음 || 시간이 오래됨: 오래 조리됨
+* 입력값 $\mathbf{x}=[200, 17]$
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/81f3fc4a-46c9-49a0-a4cd-a84d18b58106)
+```python
+x=np.array([[200.0, 17]] #입력값
+layer_1=Dense(units=3, activation='sigmoid')#Dense함수 사용, 유닛: 3개([[0.2, 0.7, 0.3]])
+a1=layer_1(x)#x: 입력값
+```
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/91a693a5-9497-47e7-85dd-5093254b76ea)
+```python
+layer2_=Dence(units=1, activation='sigmoid')#유닛 1개([0.8])
+a2=layer2(a1)#입력값: a1
+```
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/61e65cbd-9f35-4b44-ab28-b2a8b2a70106)
+```python
+if a2>=0.5: yhat=1
+else: yhat=0
+```
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/c2eb63bf-82c5-4ccd-8274-3663dee56e4e)
+* x: 25개, np.array형태
+* layer_1에 Dense함수 사용 -> 출력값은 a1
+* -> a1을 layer_2에 삽입 -> a2출력
+   * layer_2에 Dense함수 사용
+* ....
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/ee60a386-077a-4088-b05f-cc8677fc0546)
+
+---
+
+## Data in TensorFlow
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/39e678cc-d7b9-4d29-869f-0c499e76f138)
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/1f5389a1-df97-470f-9cc5-6a9365fafd51)
+$ \begin{bmatrix}
+1 &2  &3  \\
+4 &5  &6  \\
+\end{bmatrix}$
+->
+`x=np.array([[1, 2, 3], [4, 5, 6]]`
+
+$\begin{bmatrix}
+0.1& 0.2
+-3& 4
+-.5& -.6
+7& 8
+\end{bmatrix}$
+->
+`x=np.array([[0.1, 0.2], [-3, 4], [-0.5, -0.6], [7, 8]])`
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/4b916f4d-65d6-478e-89b8-46c70e40c55c)
 
