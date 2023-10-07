@@ -84,3 +84,27 @@
   
 ![Alt text](image-7.png)
 * 자동차 예시
+
+---
+
+## Neural network layer
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/675e5807-8fb2-41b2-a1d7-62ce0267706d)
+* Layer0: 입력값 $\mathbf{x}=[197, 184, 136, 214]$를 세 개의 뉴런에 입력
+* Layer1
+   * 첫 번째 은닉층의 매개변수와 출력값: 매개변수: $\mathbf{w}_1, b_1$, 출력값: $a=g(\mathbf{w}\cdot\mathbf{x}+b_1}=0.3$
+   * 두 번째 은닉층의 매개변수와 출력값: 매개변수: ", 출력값: "$=0.7$
+   * 세 번째 은닉층 " : 매개변수: " , 출력값: $a=g(\mathbf{w_3}\cdot z + b_3$=0.2
+      * g(z)=\frac{1}{1+e^{-(z)}}
+   * 최종 출력값: $\mathbf{a}^{[1]}=[0.3, 0.7, 0.2]$
+      * 최종 출력값의 출처 은닉층을 알려주기 위해 출력값의 윗첨자에 $[n]$을 써준다.
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/cd8f4b41-93a6-4d92-b522-a7b455dc598f)
+* Layer2
+   * 입력값: $ a^{[1]}$
+   * 출력값의 매개변수: $\mathbf{w_1}+b_1$
+   * 출력값: $\mathbf{a}_1=g(\mathbf{w}_1\cdot \mathbf{a^{[1]}}+b1)$
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/79ffc678-353f-4691-9245-d8fa6435334b)
+* 출력값: $a^{[2]}=0.84$
+* 결과: $a^{[2]}가 0.5보다 크거나 같나?$
+   * 참: $y=1$, 거짓: $y=0$
