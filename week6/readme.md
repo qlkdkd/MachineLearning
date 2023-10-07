@@ -91,7 +91,9 @@
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/675e5807-8fb2-41b2-a1d7-62ce0267706d)
 * Layer0: 입력값 $\mathbf{x}=[197, 184, 136, 214]$를 세 개의 뉴런에 입력
 * Layer1
-   * 첫 번째 은닉층의 매개변수와 출력값: 매개변수: $\mathbf{w}_1, b_1$, 출력값: $a=g(\mathbf{w}\cdot\mathbf{x}+b_1}=0.3$
+   * 첫 번째 은닉층의 매개변수와 출력값: 매개변수:
+
+$\mathbf{w}_1, b_1$, 출력값: $a=g(\mathbf{w}\cdot\mathbf{x}+b_1}=0.3$
    * 두 번째 은닉층의 매개변수와 출력값: 매개변수: ", 출력값: "$=0.7$
    * 세 번째 은닉층 " : 매개변수: " , 출력값: $a=g(\mathbf{w_3}\cdot z + b_3$=0.2
       * g(z)=\frac{1}{1+e^{-(z)}}
