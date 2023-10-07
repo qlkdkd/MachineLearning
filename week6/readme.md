@@ -121,5 +121,5 @@
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/670ccd50-d15b-4fbc-9cff-6d3c623a2246)
 * 빈칸: $\mathbf{w}_2^{[3]}, b_2^{[3]}=a^{[2]}=g(\mathbf{w}^{[2]}}\cdot\mathbf{a}^{[2]}+b^{[2]})$
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/3c09e955-4162-489c-a3e5-baf2d3fdbfc5)
-### $a^{[l]}=g(\mathbf{w}^{[l]}}\cdot\mathbf{a}^{[l-1]}+b^{[l]})$
+* $a^{[l]}=g(\mathbf{w}^{[l]}}\cdot\mathbf{a}^{[l-1]}+b^{[l]})$
 * 입력값 $\mathbf{x}$는 $a^{[0]}$ 
