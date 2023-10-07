@@ -121,5 +121,16 @@
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/670ccd50-d15b-4fbc-9cff-6d3c623a2246)
 * 빈칸: $\mathbf{w}_2^{[3]}$, $b_2^{[3]}=a^{[2]}=g(\mathbf{w}^{[2]} \cdot\ mathbf{a}^{[2]}+b^{[2]})$
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/3c09e955-4162-489c-a3e5-baf2d3fdbfc5)
-* $a^{[l]}=g(\mathbf{w}^{[l]}}\cdot\mathbf{a}^{[l-1]}+b^{[l]})$
+* $a^{[l]}=g(\mathbf{w}^{[l]}\cdot\mathbf{a}^{[l-1]}+b^{[l]})$
 * 입력값 $\mathbf{x}$는 $a^{[0]}$ 
+
+---
+
+## Inrerence: making predictions(forward propagation)
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/4a1461fc-df65-46a2-9171-54fe270f0e5a)
+* 입력값: 1개, 은닉층: 2개(1단계: 25개, 2단계: 15개), 출력층: 1개($a$가 '1'일 확률)
+* $a^{[1]}$은 25개의 값을 가진 벡터이다.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/d06984d3-fce6-4510-97bc-01fd98007d95)
+* $a^{[2]}$는 15개의 값을 가진 벡터이다. 이는 계속 활용된다.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/e4989214-1bc5-493e-a38e-398d9fed5e02)
+
