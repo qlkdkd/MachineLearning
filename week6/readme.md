@@ -202,4 +202,6 @@ $$\begin{bmatrix}
 `x=np.array([[0.1, 0.2], [-3, 4], [-0.5, -0.6], [7, 8]])`
 
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/4b916f4d-65d6-478e-89b8-46c70e40c55c)
+* Tensorflow에서는 **벡터를 2차원 행렬로 입력한다**.
 
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/283e03ed-4759-45f6-8e1b-e8f51d99f483)
