@@ -116,3 +116,10 @@
 
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/c0845268-4c8c-480b-951b-cb439266f6a5)
 * 4층 구조 신경망: 3개의 은닉층, 1개의 출력층층
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/290c513e-3257-4cc9-8642-7da8abdfba76)
+* $a_n^{[3]}=g(\mathbf{w}_1^{[3]}+\\mathbf{a}^{[2]}+b_n$
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/670ccd50-d15b-4fbc-9cff-6d3c623a2246)
+* 빈칸: $\mathbf{w}_2^{[3]}, b_2^{[3]}=a^{[2]}=g(\mathbf{w}^{[2]}}\cdot\mathbf{a}^{[2]}+b^{[2]})$
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/3c09e955-4162-489c-a3e5-baf2d3fdbfc5)
+###  $a^{[l]}=g(\mathbf{w}^{[l]}}\cdot\mathbf{a}^{[l-1]}+b^{[l]})$
+* 입력값 $\mathbf{x}$는 $a^{[0]}$ 
