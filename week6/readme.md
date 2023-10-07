@@ -183,19 +183,19 @@ else: yhat=0
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/39e678cc-d7b9-4d29-869f-0c499e76f138)
 
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/1f5389a1-df97-470f-9cc5-6a9365fafd51)
-$ \begin{bmatrix}
+$$ \begin{bmatrix}
 1 &2  &3  \\
 4 &5  &6  \\
-\end{bmatrix}$
+\end{bmatrix}$$
 ->
 `x=np.array([[1, 2, 3], [4, 5, 6]]`
 
-$\begin{bmatrix}
+$$\begin{bmatrix}
 0.1& 0.2
 -3& 4
 -.5& -.6
 7& 8
-\end{bmatrix}$
+\end{bmatrix}$$
 ->
 `x=np.array([[0.1, 0.2], [-3, 4], [-0.5, -0.6], [7, 8]])`
 
