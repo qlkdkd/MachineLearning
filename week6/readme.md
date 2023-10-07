@@ -205,3 +205,14 @@ $$\begin{bmatrix}
 * Tensorflow에서는 **벡터를 2차원 행렬로 입력한다**.
 
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/283e03ed-4759-45f6-8e1b-e8f51d99f483)
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/cf61c318-421d-4d50-91e3-079128c32217)
+```python
+x=np.array([200.0, 17.0]])
+layer_1=Dense(units=3, activations='sigmoid')
+a1=layer_1(x)
+```
+tf.Tensor([[0.2, 0.7, 0.3]], shape=(1, 3), dtpye=float32)# $3\times 1$ 행렬
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/60245537-88c2-4c5d-a676-b391728ec2d2)
+* layer_2=[[0.8]](Tensorflow) # $1\times 1$ 행렬
