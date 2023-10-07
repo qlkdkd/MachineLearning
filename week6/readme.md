@@ -216,3 +216,7 @@ tf.Tensor([[0.2, 0.7, 0.3]], shape=(1, 3), dtpye=float32)# $3\times 1$ 행렬
 
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/60245537-88c2-4c5d-a676-b391728ec2d2)
 * layer_2=[[0.8]](Tensorflow) # $1\times 1$ 행렬
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/d6cf7c37-9813-4c7c-9d17-67df9c7429e4)
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/131f21ae-c10d-4d06-aaa6-696ee0b36754)
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/14974221-0307-4211-b9b4-83b5569c2776)
