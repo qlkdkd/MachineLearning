@@ -100,7 +100,7 @@
 
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/cd8f4b41-93a6-4d92-b522-a7b455dc598f)
 * Layer2
-   * 입력값: $ a^{[1]}$
+   * 입력값: $a^{[1]}$
    * 출력값의 매개변수: $\mathbf{w_1}+b_1$
    * 출력값: $\mathbf{a}_1=g(\mathbf{w}_1\cdot \mathbf{a^{[1]}}+b1)$
 
