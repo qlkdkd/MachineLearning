@@ -84,5 +84,19 @@ def sequential(x):
 # Is there a path to AGI?
 * AI
     * ANI(Artificial Narrow Intelligence[협의의 인공지능]): E.g., 스마트스피커, 자율주행 자동차, 웹서치, 공장에서 사용할 수 있는 ai
-    * AGI(Artificial General Intelligence[일반적인 인공지능]): 인간이 할 수 있는 모든 것것
-  
+    * AGI(Artificial General Intelligence[일반적인 인공지능]): 인간이 할 수 있는 모든 것
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/cc6e455c-55f6-422d-8e99-9d629c33c8d8)
+* 실제 뉴런
+    * 입력->출력: 뉴런에서 뉴런으로
+* 수학적으로 간단히 재현된 뉴런 모델
+    * 입력->출력:
+ 
+## 뉴런 신경망과 뇌
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/4c42e5c1-a2c0-4ed0-bf29-1e1e097c3355)
+* 실제로 인간 뇌와 인공신경망의 거리는 아직 멀다.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/6d77b7c6-04f4-416a-811b-5df033192030)
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/0fd0604c-e35f-465c-bbd5-14c8336e31b8)
+
+하나의 학습 알고리즘 가설: 모든 지능의 행동이 시뮬레이션이 가능하다는 가설. 하나만 이해하면 모든 지능을 구현할 수 있다.
+* 원리: 시각, 촉각 등의 정보를 뇌로 이동. 만약 청각 또는 촉각을 끊고 시각만 연결했는데도 청각/촉각적 기억을 한다.(체성감각피질)
