@@ -13,3 +13,22 @@ a1_1=sigmoid(z1_1)
 ```
 
 $a_2^{[1]}=g(\overrightarrow{w}_2^{[1]} \cdot \overrightarrow{x} +b_2^{[1]})= $
+```python
+w1_2=np.array([-3, 4])
+b1_2=np.array([1])
+z1_2=np.dot(w1_2, x)+b
+a1_2=sigmoid(z1_2)
+```
+
+$a_3^{[1]}=g(\overrightarrow{w}_3^{[1]}\cdot \overrightarrow{x}+b_3^{[1]}=$
+```python
+w1_3=np.array([5, -6])
+b1_3=np.array([2])
+z1_3=np.dot(w1_3, x)+b
+a1_3=sigmoid(z1_3)
+```
+
+->
+```python
+a1=np.array([a1_1, a1_2, a1_3])
+```
