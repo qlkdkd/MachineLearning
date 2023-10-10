@@ -100,3 +100,14 @@ def sequential(x):
 
 하나의 학습 알고리즘 가설: 모든 지능의 행동이 시뮬레이션이 가능하다는 가설. 하나만 이해하면 모든 지능을 구현할 수 있다.
 * 원리: 시각, 촉각 등의 정보를 뇌로 이동. 만약 청각 또는 촉각을 끊고 시각만 연결했는데도 청각/촉각적 기억을 한다.(체성감각피질)
+
+## Sensor representations in the brain
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/8e8fa4e7-9e40-433e-a845-7107469f55b1)
+* '혀에 전극을 주면 흑백 이미지를 학습할 수 있을까'라는 실험이 진행된 적 있음
+* '사람들도 청각을 통해 인지할 수 있을까?'
+* 햅틱 벨트: 가야되는 곳의 방향을 몸으로 기억할 수 있을까?
+* 제 3의 눈을 뇌에 직접 인식하면 놀랍도록 적응력이 있다.
+
+---
+
+# How neural networks are implemented efficiently
