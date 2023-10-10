@@ -78,6 +78,7 @@ def sequential(x):
   return f_x
 ```
 
+> Capital `W` refers to a matrix
 ---
 
 # Is there a path to AGI?
