@@ -5,6 +5,14 @@
 
 $\overrightarrow{x}=$ `np.array([200, 17)]`
 
+$a_1^{[2]}=g(\overrightarrow{w}_1^{[2]}\cdot \overrightarrow{a}^{[1]}+b_1^{[2]}=$
+```python
+w2_1=np.array([-7, 8])
+b2_1=np.array([3])
+z2_1=np.dot(w2_1, ba1)+b2_1
+a2_1=sigmoid(z2_1)
+```
+
 $a_1^{[1]}=g(\overrightarrow{w}_1^{[1]}\cdot \overrightarrow{x}+b_1^{[1]})=$
 ```python
 w1_1=np.array([1, 2])
