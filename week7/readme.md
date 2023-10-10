@@ -54,3 +54,25 @@ a1=np.array([a1_1, a1_2, a1_3])
 
 $\overrightarrow{a}^{[0]}=\overrightarrow{x}$=
 `a_in=np.array([-2, 4])`
+
+```python
+def dense(a_in, W, bm g):
+  units=W.shape[1]#[0, 0, 0]
+  a_out=np.zeros(units)
+  for j in range(units):#0, 1, 2
+    w=W[:, j]
+    z=np.dot(w, a_in)+b
+    a_out[j]=g(z)
+  return a_out
+#note: g() is defined outside of dense()
+#(see optional lab for details)
+```
+```python
+def sequential(x):
+  a1=dense(x, W1, b1, g)
+  a2=dense(a1, W2, b2, g)
+  a3=dense(a2 W3, b3, g)
+  a4=dense(a3, W4, b4, g)
+  f_x=a4
+  return f_x
+```
