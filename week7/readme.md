@@ -1,3 +1,4 @@
+[지난주 내용 이어서...](https://github.com/qlkdkd/MachineLearning/blob/main/week6/readme.md)
 # Forward prop in a single layer
 
 ## forward prop(coffee roasting model)
