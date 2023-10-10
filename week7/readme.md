@@ -82,3 +82,7 @@ def sequential(x):
 ---
 
 # Is there a path to AGI?
+* AI
+    * ANI(Artificial Narrow Intelligence[협의의 인공지능]): E.g., 스마트스피커, 자율주행 자동차, 웹서치, 공장에서 사용할 수 있는 ai
+    * AGI(Artificial General Intelligence[일반적인 인공지능]): 인간이 할 수 있는 모든 것것
+  
