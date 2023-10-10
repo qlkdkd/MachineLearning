@@ -42,3 +42,15 @@ a1_3=sigmoid(z1_3)
 ```python
 a1=np.array([a1_1, a1_2, a1_3])
 ```
+
+---
+
+# General implementation of forward propagation
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/9e632fb4-3b68-4837-bf06-74f9ed98de5f)
+`W=np.array([[1, -3, 5], [2, 4, -6]])`
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/395b7429-5131-4045-b626-dd37590bb2a4)
+`b=np.array([-1, 1, 2])`
+
+$\overrightarrow{a}^{[0]}=\overrightarrow{x}$=
+`a_in=np.array([-2, 4])`
