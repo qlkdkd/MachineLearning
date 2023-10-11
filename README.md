@@ -9,4 +9,4 @@
 
 [6주차](https://github.com/qlkdkd/MachineLearning/tree/main/week6)
 
-[7주차]()
+[7주차](https://github.com/qlkdkd/MachineLearning/tree/main/week7)
