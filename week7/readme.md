@@ -158,7 +158,7 @@ def dense(A_in, W, B):
 * 2by3 mul 3by2
 * $\overrightarrow{a}_1^T \overrightarrow{w}_1 =(1\times 3)+(2 \times 4)=11$
 * row3 col2
-    * $\overrightarrow{a_3^T}\overrightarrow{w_2}=(0.1 \times 5)+(0.2 \times 6)=1.7$
+    * $\overrightarrow{a}^T_3\overrightarrow{w_2}=(0.1 \times 5)+(0.2 \times 6)=1.7$
 * row2 col3
     * $overrightarrow{a_2^T}\overrightarrow{w_3}=(-1 \times 7)+(-2 \times 8)=-23$
 * $Z=A^TW=$![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/4ebf44bf-49dd-4883-aae4-d09753cdc89a)
