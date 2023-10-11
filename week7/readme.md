@@ -111,3 +111,33 @@ def sequential(x):
 ---
 
 # How neural networks are implemented efficiently
+## For loops vs vetorizetion
+```python
+# for loop
+X=np.array(p200, 17)]
+W=np.array([[1, -3, 5], [-2, 4, -6]])
+b=np.array([-1, 1, 2])
+
+def dense(a_in, W, b):
+  a_out=np.zeros(units)
+  for j in ragne(units):
+    w=w[:, j]
+    z=np.dot(W, X)+b[j]
+    a[j]=g(z)
+  return a
+```
+a
+
+```python
+#vectorization
+X=np.array(p200, 17)]
+W=np.array([[1, -3, 5], [-2, 4, -6]])
+B=np.array([-1, 1, 2])
+
+def dense(A_in, W, B):
+  Z=np.matmul(A_in, W)# np.matmul=matrix multiplication
+  A_out=g(Z)
+  return A_out
+```
+[[1, 0, 1]]
+```
