@@ -160,10 +160,38 @@ def dense(A_in, W, B):
 * row3 col2
     * $\overrightarrow{a}^T_3\overrightarrow{w_2}=(0.1 \times 5)+(0.2 \times 6)=1.7$
 * row2 col3
-    * $overrightarrow{a}_3^T\overrightarrow{w_3}=(-1 \times 7)+(-2 \times 8)=-23$
+    * $\overrightarrow{a}_3^T\overrightarrow{w_3}=(-1 \times 7)+(-2 \times 8)=-23$
 * $Z=A^TW=$![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/4ebf44bf-49dd-4883-aae4-d09753cdc89a)
 
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/1a8334d4-9e01-463b-afa7-d79a3c1751e5)
 
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/f590c46a-057f-4f38-8ea0-3722a1f45366)
 
+# Matrix multiplication code
+## Matrix multiplication in NumPy
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/f3f34def-66e4-46bf-972d-9890506e4932)
+```python
+A=np.array([1, -1, 0.1], [2, -2, 0.2])
+AT=np.array([1, 2], [-1, -2], [0.1, 0.2])#AT=A.T
+W=np.array([3, 5, 7, 9], [4, 6, 8, 0])
+Z=np.matmul(AT, W)#or Z=AT@W
+```
+$\begin{bmatrix}
+ 11& 17 &  23&  9\\
+ -11& -17 & -23 & -9 \\
+ 1.1&  1.7& 2.3 & 0.9 \\
+\end{bmatrix}$
+
+## Dense layer vectorized
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/a0ce115c-00f5-4eda-baa3-05ac932e5f35)
+```python
+AT=np.array([[200, 17]])
+W=np.array([[1, -3, 5], [-2, 4, -6]])
+b=np.array([[-1, 1, 2]])
+
+def dense(AT, W, b, g):
+  z=np.matmul(AT, W)+b
+  a_out=g(z)
+  return a_out
+```
+$[[1, 0, 1]]$
