@@ -140,4 +140,58 @@ def dense(A_in, W, B):
   return A_out
 ```
 [[1, 0, 1]]
-```
+
+# Matrix multiplication
+## dot products
+example
+$ \begin{bmatrix}
+1& 3  \\
+2& 4 \\
+\end{bmatrix}$
+
+in general
+$\begin{bmatrix}
+\uparrow & \uparrow\\
+\overrightarrow{a}& \overrightarrow{w}\\
+\downarrow & \downarrow\\
+\end{bmatrix}$
+$z=\overrightarrow{a}\cdot \overrightarrow{w}$
+
+transpose
+$\overrightarrow{a}=\begin{bmatrix}
+1\\
+2\\
+\end{bmatrix}$
+$\overrightarrow{a}^T=[1, 2]
+
+vector vector multiplication
+$[\leftarrow \overrightarrow{a}^T \rightarrow]$
+$\begin{bmatrix}
+\uparrow \\
+\overrightarrow{w}\\
+\downarrow\\
+\end{bamtrix}$
+$z=\overrightarrow{a}^T\overrightarrow{w}$
+
+## Vector matrix multiplication
+$\overrightarrow{a}=\begin{bmatrix}
+1\\
+2\\
+\end{bmatrix}$
+
+$\overrightarrow{a}^T=[1, 2]$
+
+$w=\begin{bmatrix}
+3& 5\\
+4& 6\\
+\end{bmatrix}$
+
+$Z=\overrigtharrow{a}^T W$(1 by 2) $[\rightarrow \overrightarrow{a}^T \rightarrow$
+$\begin{bmatrix}
+\uparrow & \uparrow \\
+\overrightarrow{w}_1 & \overrightarrow{w}_2 \\
+\downarrow & \downarrow \\
+\end{bmatrix}$
+
+$Z=[\overrightarrow{a}^T \overrightarrow{w}_1 & a^T \overrightarrow{w}_2]$
+> $(1 \* 3)+(2 \* 4)$
