@@ -161,10 +161,9 @@ def dense(A_in, W, B):
     * $\overrightarrow{a_3^T}\overrightarrow{w_2}=(0.1 \times 5)+(0.2 \times 6)=1.7$
 * row2 col3
     * $overrightarrow{a_2^T}\overrightarrow{w_3}=(-1 \times 7)+(-2 \times 8)=-23$
-* $Z=A^TW=$
-* 
-$\begin{bmatrix}
-11& 17& 23& 9\\
--11& -17& -23& -9\\
-1.1& 1.7& 2.3& 0.9\\
-\end{bamtrix}$
+* $Z=A^TW=$![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/4ebf44bf-49dd-4883-aae4-d09753cdc89a)
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/1a8334d4-9e01-463b-afa7-d79a3c1751e5)
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/f590c46a-057f-4f38-8ea0-3722a1f45366)
+
