@@ -162,9 +162,9 @@ def dense(A_in, W, B):
 * row2 col3
     * $overrightarrow{a_2^T}\overrightarrow{w_3}=(-1 \times 7)+(-2 \times 8)=-23$
 * $Z=A^TW=$
+* 
 $\begin{bmatrix}
 11& 17& 23& 9\\
 -11& -17& -23& -9\\
 1.1& 1.7& 2.3& 0.9\\
-\end{bamtrix}
-$
+\end{bamtrix}$
