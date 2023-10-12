@@ -46,7 +46,15 @@ $$J_{w, b}=\frac{1}{2m}\sum_{i=1}^{m}(f_{w, b}(x_{(i)})-y^{(i)})^2$$
 ### Simplified
 * 우선, 직관적으로 접근하기 위해서 $w=0$ 으로 설정하여 f함수를 단순화한다. 훈련 세트도(1, 1), (2, 2), (3, 3)이라고 가정해보자.
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/90fef331-0b21-464e-999c-bddc4da76041)
-* w=0이 될 경우, $J(w)=\frac{1}{2m}\sum_{i=1}{m}(f_w(x^{(i)}-y^{(i)})^2=\frac{1}{2m}(0^2+0^2+0^2)=0$가 되어버려 훈련 세트와 일치하지 않는다.
-* 따라서 w!=0이다.
+* w=0이 될 경우, $J(w)=\frac{1}{2m}\sum_{i=1}{m}(f_w(x^{(i)}-y^{(i)})^2=\frac{1}{2m}(0^2+0^2+0^2)=0$가 되어버려 훈련 세트와 일치하지 않는다. 따라서 w!=0이다.
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/ed71087d-8050-492a-bc80-a907377f75d0)
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/5817be2d-db9d-4168-9a43-b5a32c118791)
 * w=1일 경우 $J(w)=\frac{1}{2m}\sum_{i=1}{m}(f_w(x^{(i)}-y^{(i)})^2=x$이 되어 훈련세트와 일치한다.
+
+---
+
+# Visualizing the Cost Function
+* 함수: $f_{w, b}(x)=wb+x(b\neq 0)$
+* 파라미터: $w, b$
+* 비용함수: $J(w, b)=\frac{1}{2}\sum_{i=1}{m}(f_{w, b}(x^{(i)}-y^{(i)})^2$
+* 목표: $minimize_{w, b}J(w, b)$
