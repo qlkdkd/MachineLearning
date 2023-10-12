@@ -54,7 +54,24 @@ $$J_{w, b}=\frac{1}{2m}\sum_{i=1}^{m}(f_{w, b}(x_{(i)})-y^{(i)})^2$$
 ---
 
 # Visualizing the Cost Function
+이제 $b$가 존재하는 다변수 선형 회귀를 생각해보자.
 * 함수: $f_{w, b}(x)=wb+x(b\neq 0)$
 * 파라미터: $w, b$
 * 비용함수: $J(w, b)=\frac{1}{2}\sum_{i=1}{m}(f_{w, b}(x^{(i)}-y^{(i)})^2$
 * 목표: $minimize_{w, b}J(w, b)$
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/30892934-8a42-4aa1-9df4-0e94f97ee336)
+
+이제 파라미터가 2개가 되었고, 이전보다 J함수의 그래프는 더욱 복잡해질 것이다.
+마찬가지로 포물선과 같은 형태이긴 하지만 아래와 같이 3차원 그래프로 나타낼 수 있을 것이다.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/ba2e07f7-52f8-4d73-b9f2-3b00dcf89e2d)
+
+이처럼 비용함수를 표현하면 w, b, J(w, b) 총 3가지를 표현해야하므로 위와 같이 3차원의 그래프가 된다.
+우리에게 필요한 비용함수의 값은 (x, y)평면으로부터의 높이가 된다.
+ 우리는 비용함수를 더 편리하게 보기 위해서 위와 같은 3차원 도형이 아닌 3차원의 그래프를 (x, y)평면으로 정사영시킨 
+등고선 그래프(Contour Plots, Contour Figures)를 활용할 것이다.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/53c01e65-1704-4488-b80d-d422ac289562)
+
+---
+
+# Visualization examples
+
