@@ -1,3 +1,4 @@
+[퀴즈 보기](https://github.com/qlkdkd/MachineLearning/blob/main/1%EC%A3%BC%EC%B0%A8/Quiz.md)
 # What is Machine Learning?
 ## Machine Learning
 "명시적으로 프로그래밍하지 않고도 컴퓨터에 학습할 수 있는 능력을 부여하는 연구 분야"
@@ -76,4 +77,4 @@
 * Given email labeled as spam/not spam, learn a spam filter(X)->지도학습
 * Given a set of news articles found on the web, group them into sets of articles about the same story(O)->군집화
 * Given a database of customer data, automatically discover market segments and group customers into different market segments.(O)-> 군집화
-* Given a dataset of patients diagnosed as either having diabetes or not, learn to classify new patients as having diabetes or not(X)-> 지도학습습
+* Given a dataset of patients diagnosed as either having diabetes or not, learn to classify new patients as having diabetes or not(X)-> 지도학습
