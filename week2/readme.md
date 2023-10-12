@@ -40,3 +40,13 @@ $$J_{w, b}=\frac{1}{2m}\sum_{i=1}^{m}(f_{w, b}(x_{(i)})-y^{(i)})^2$$
 * 우리가 구한 J함수가 바로 **비용함수**(Cost function)이다. 이 함수는 제곱 오차 함수 또는 평균 제곱 오차라고도 불린다. 비용함수는 대부분의 회귀 문제에서 적절하고 통상적인 방법이지만, 다른 비용함수들 또한 적절하다.
 
 ---
+
+# Cost Function Intuition
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/0362c63d-6894-495a-94d6-de1bc10fba78)
+### Simplified
+* 우선, 직관적으로 접근하기 위해서 $w=0$ 으로 설정하여 f함수를 단순화한다. 훈련 세트도(1, 1), (2, 2), (3, 3)이라고 가정해보자.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/90fef331-0b21-464e-999c-bddc4da76041)
+* w=0이 될 경우, $J(w)=\frac{1}{2m}\sum_{i=1}{m}(f_w(x^{(i)}-y^{(i)})^2=\frac{1}{2m}(0^2+0^2+0^2)=0$가 되어버려 훈련 세트와 일치하지 않는다.
+* 따라서 w!=0이다.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/ed71087d-8050-492a-bc80-a907377f75d0)
+* w=1일 경우 $J(w)=\frac{1}{2m}\sum_{i=1}{m}(f_w(x^{(i)}-y^{(i)})^2=x$이 되어 훈련세트와 일치한다.
