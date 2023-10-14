@@ -97,8 +97,8 @@ $$w=w-\alpha\frac{\partial}{\partial w}J(w, b)$$
 $$b=b-\alpha\frac{\partial}{\partial b}J(w, b)$$
 
    * =: 할당 연산자
-   * $\alpha$: 학습률
-   * \frac{\partial}{\partial w(또는 b)}$: 미분 계수
+   * $\alpha$ : 학습률
+   * $\frac{\partial}{\partial w(또는 b)}$: 미분 계수
 * 올바른 예시
 $$tmp_w=w-\alpha\frac{\partial}{\partial w}J(w, b)$$ 
 $$tmp_b=b-\alpha\frac{\partial}{\partial b}J(w, b)$$
@@ -150,8 +150,8 @@ $$tmp_b=b-\alpha\frac{\partial}{\partial b}J(w, b)$$($b=tmp_b$)
 * $=\frac{1}{m}(f_{w, b}(x^{(i)})-y^{(i)})x$
 
 결과
-$$w=w-\alpha\frac{1}{m}\sum_{i=1}{m}(f_){w, b}(x^{(i)})-y^{(i)})x^{(i)}$$
-$$b=b-\alpha\frac{1}{m}\sum_{i=1}{m}(f_){w, b}(x^{(i)})-y^{(i)})$$
+$$w=w-\alpha\frac{1}{m}\sum_{i=1}{m}(f){w, b}(x^{(i)})-y^{(i)})x^{(i)}$$
+$$b=b-\alpha\frac{1}{m}\sum_{i=1}{m}(f){w, b}(x^{(i)})-y^{(i)})$$
 * 중요한 것은 w와 b를 동시에 구해서 동시에 업데이트해야 한다는 것이다.
 
 * 앞에서 기울기 하강(Nagative Slope)이 Local Optima에 민감하다는 것을 보았다 따라서, 초기값의 위치에 따라서 최적의 최솟값이 달라진다는 것을 언급했다. 그러나 선형회귀의 비용함수는 항상 아래와 같은 모양이 된다.
