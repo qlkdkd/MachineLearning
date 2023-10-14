@@ -139,8 +139,8 @@ $$tmp_b=b-\alpha\frac{\partial}{\partial b}J(w, b)$$($b=tmp_b$)
    * $f_{w, b}(x)=wx+b$
    * 비용함수: $J(w, b)=cc$
 * 경사하강법 알고리즘
-   * $w=w-\alpha\frac{\partial}{\partial w}J(w, b)$ -> $\frac{1}{m}\sum_{i=1}{m}(f_{w, b}(x^{(i)})-y^{(i)})x^{(i)}$
-   * $b=b-\alpha\frac{\partial}{\partial b}J(w, b)$ -> $\frac{1}{m}\sum_{i=1}{m}(f_{w, b}(x^{(i)})-y^{(i)})$
+   * $w=w-\alpha\frac{\partial}{\partial w}J(w, b)$ -> $\frac{1}{m}\sum_{i=1}^{m}(f_{w, b}(x^{(i)})-y^{(i)})x^{(i)}$
+   * $b=b-\alpha\frac{\partial}{\partial b}J(w, b)$ -> $\frac{1}{m}\sum_{i=1}^{m}(f_{w, b}(x^{(i)})-y^{(i)})$
  
 즉, 경사하강법 알고리즘을 선형회귀에 적용하여 최소화시킬 것이다. 이 과정에서 가장 중효한 것은 미분계수이며,
  예시에서는 두 개의 파라미터가 존재하기 때문에 2개의 함수가 각각 나오게 되며, 아래와 같은 결과가 나오게 된다.
