@@ -74,4 +74,44 @@ $$J_{w, b}=\frac{1}{2m}\sum_{i=1}^{m}(f_{w, b}(x_{(i)})-y^{(i)})^2$$
 ---
 
 # Visualization examples
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/7f3ba07f-9ded-4253-b222-03a6ed4747d6)
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/524dcc87-4303-49a9-88f9-a8564434edaf)
 
+# Gradient Descent
+* 경사하강법(gradient descent)은 비용함수의 최솟값을 구하는 알고리즘이다(즉, 최소가 되도록 하는 w, b를 구하는 알고리즘이다.). 이 알고리즘은 선형 회귀 뿐만 아니라 대부분의 머신러닝에서 실제로 사용되는 알고리즘이다.
+
+* 경사하강법 알고리즘은 다음과 같은 방법으로 진행된다.
+      * $J(w, b)$(선형회귀나 아무 함수)
+      * 원하는 결과: $min_{w, b}J(w, b)$
+* w와 b로 시작($w=0, j=0$으로 시작)
+* $J(w, b))$를 줄이기 위해 $w$, $b$를 계속 변경하여 최소한으로 끝날때까지 진행
+
+* 즉, 임의의 초기값으로 시작하여 최소의 비용함수의 값을 찾을 때 까지 w, b를 변경시킨다. 임의의 초기값을 기준으로 최소가 되는 점을 찾아내는 알고리즘이다.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/a0d6e859-9bc1-43ce-ad55-ec150cf807b9)
+
+---
+
+# Implementing Gradient Descent
+### 경사하강법 알고리즘
+$$w=w-\alpha\frac{\partial}{\partial w}J(w, b)$$
+$$b=b-\alpha\frac{\partial}{\partial b}J(w, b)$$
+
+   * =: 할당 연산자
+   * $\alpha$: 학습률
+   * \frac{\partial}{\partial w(또는 b)}$: 미분 계수
+* 올바른 예시
+$$tmp_w=w-\alpha\frac{\partial}{\partial w}J(w, b)$$ 
+$$tmp_b=b-\alpha\frac{\partial}{\partial b}J(w, b)$$
+($w=tmp_w$)
+($b=tmp_b$)
+* 잘못된 예시
+$$tmp_w=w-\alpha\frac{\partial}{\partial w}J(w, b)$$($w=tmp_w$)
+$$tmp_b=b-\alpha\frac{\partial}{\partial b}J(w, b)$$($b=tmp_b$)
+
+---
+
+# Gradient Descent Intuition
+* $J(w)$
+* $w=w-\alpha\frac{\partial}{\partial w}J(w)$
+* $min_wJ(w)$
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/9eb3a8da-0c4c-4a88-a151-53441a66ac88)
