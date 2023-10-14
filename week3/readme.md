@@ -73,5 +73,16 @@ w=w-0.1*d
 우리는 지금 다변수를 갖는 경우의 함수에 대해서 살펴보았다. 이제 우리는 가설 함수의 매개변수들을 어떻게 지정하는지 알아볼 것이고, 
 경사하강법을 어떻게 적용할 것인지 살펴 볼 것이다.
 
-기존에 요소가 1개인 경우에는 아래와 같은 선형 하강법을 적요하면 되었다.
+기존에 요소가 1개인 경우에는 아래와 같은 경사 하강법을 적용하면 되었다.
+$$w=w-\alpha\frac{1}{m}\sum_{i=1}^{m}(f_w(x^{(i)})-y^{(i)})x^{(i)}$$
 $$b=b-\alpha\frac{1}{m}\sum_{i=1}^{m}(f_b(x^{(i)})-y^{(i)})$$
+
+하지만 다변수 선형회귀의 경우에는 아래와 같은 경사하강법을 적용하면 된다.
+* 반복
+    * $w_j=w_j-\alpha\frac{\partial}{\partial w_j}J(\overrightarrow{w}, b)$
+    * $b=b-\alpha\frac{\partial}{\partial b}J(\overrightarrow{w}, b)$
+        * $J=\overrightarrow{w}\cdot\overrightarrow{x}+b$
+        * $\overrightarrow{w}, j$는 지속적으로 업데이트 해야함
+     
+---
+
