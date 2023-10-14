@@ -86,3 +86,10 @@ $$b=b-\alpha\frac{1}{m}\sum_{i=1}^{m}(f_b(x^{(i)})-y^{(i)})$$
      
 ---
 
+# Feature Scaling Part 1
+Feature Scailing은 경사하강법을 잘 활용할 수 있는 방법 중 하나이다.
+Feature Scailing의 개념은 서로 다른 요소라도 비슷하거나 같은 범위에 있다면 경사하강법은 더욱 빠르게 수렴할 수 있다는 것이다.
+* $price=w_1x_1+w_2x+2+b$
+    * $x_1$=size(feet^2), range: 300~2000
+    * $x_2$=number of bedrooms, range: 0~5
+$ House: $x_1=2000$, $x_2=5$, price=\$500k
