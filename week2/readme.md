@@ -114,4 +114,53 @@ $$tmp_b=b-\alpha\frac{\partial}{\partial b}J(w, b)$$($b=tmp_b$)
 * $J(w)$
 * $w=w-\alpha\frac{\partial}{\partial w}J(w)$
 * $min_wJ(w)$
+* $\alpha>0$ -> $w=w-\alpha\*(positive number)$
+* $\alpha<0)$-> $w=w-\alpha\*(negative number)$
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/9eb3a8da-0c4c-4a88-a151-53441a66ac88)
+
+---
+
+# Learning rate
+* $w=w-\alpha\frac{\partial}{\partial w}J(w)$
+* 만약 $\alpha$가 너무 작으면, 경사하강법은 느려진다.
+* 만약 $\alpha$가 너무 크면, 경사하강법은 최속값에 이르지 못해 수렴하지 못하거나 발산할 수가 있다.
+* 따라서 적절한 학습률을 고르는 것이 중요하다.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/001f558f-41ff-4a90-8906-6c147413ecd8)
+* 선형하강법 알고리즘에서 기울기가 0이 되면 미분계수항이 0이 되므로 더이상 업데이트되지 않으며, 값을 유지하게 된다.
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/815a3580-6d64-4a64-a8e8-2f9a5d5f8538)
+* 대부분의 경우, local minimum value에 가까워질수록 미분계수의 값이 0에 가까워 지면서 조금씩 점진적으로 업데이트 되기 때문에 선형회귀 알고리즘을 수동으로 변경하지 않아도 된다.
+
+---
+
+# Gradient Descent for Linear Regression
+우리는 이제 경사하강법을 선형회귀 알고리즘에 적용해보려 한다.
+* 선형회귀 모델
+   * $f_{w, b}(x)=wx+b$
+   * 비용함수: $J(w, b)=cc$
+* 경사하강법 알고리즘
+   * $w=w-\alpha\frac{\partial}{\partial w}J(w, b)$ -> $\frac{1}{m}\sum_{i=1}{m}(f_{w, b}(x^{(i)})-y^{(i)})x^{(i)}$
+   * $b=b-\alpha\frac{\partial}{\partial b}J(w, b)$ -> $\frac{1}{m}\sum_{i=1}{m}(f_{w, b}(x^{(i)})-y^{(i)})$
+ 
+즉, 경사하강법 알고리즘을 선형회귀에 적용하여 최소화시킬 것이다. 이 과정에서 가장 중효한 것은 미분계수이며,
+ 예시에서는 두 개의 파라미터가 존재하기 때문에 2개의 함수가 각각 나오게 되며, 아래와 같은 결과가 나오게 된다.
+* $\frac{\partial}{\partial w)J(w, b)=\frac{\partial}{\partial w}\frac{1}{2m}\sum_{i=1}^m(f_{w, b}(x^{(i)})-y^{(i)})^2$
+* $=\frac{1}{m}(f_{w, b}(x^{(i)})-y^{(i)})x^{(i)}$
+* $\frac{\partial}{\partial b)J(w, b)=\frac{\partial}{\partial b}\frac{1}{2m}\sum_{i=1}^m(wx^{(i)}+b-y^{(i)})^2$
+* $=\frac{1}{m}(f_{w, b}(x^{(i)})-y^{(i)})x$
+
+결과
+$$w=w-\alpha\frac{1}{m}\sum_{i=1}{m}(f_){w, b}(x^{(i)})-y^{(i)})x^{(i)}$$
+$$b=b-\alpha\frac{1}{m}\sum_{i=1}{m}(f_){w, b}(x^{(i)})-y^{(i)})$$
+* 중요한 것은 w와 b를 동시에 구해서 동시에 업데이트해야 한다는 것이다.
+
+* 앞에서 기울기 하강(Nagative Slope)이 Local Optima에 민감하다는 것을 보았다 따라서, 초기값의 위치에 따라서 최적의 최솟값이 달라진다는 것을 언급했다. 그러나 선형회귀의 비용함수는 항상 아래와 같은 모양이 된다.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/ad73ca65-f8be-4652-b6e9-57ff06d36e25)
+* 항상 Bowl-shaped Function을 갖게 되고, 여기서 Local Optima(Local Minimum)이 없이 Gloval Optima(Gloval Minimum)만 갖게 되어 선형회귀는 항상 Global Minimum으로 수렴하게 되어있다. 그래서 이러한 규칙을 따라서 알고리즘을 진행하면 결국 최소값에 도달하게 된다.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/8891e5fc-8892-4d98-bf7b-4dc852932383)
+
+## Batch Gradient descent
+* 우리가 배운 선형하강법 알고리즘의 다른 이름은 '일괄 선형하강법'이다.
+* 여기서 'Batch(일괄)'의 의미는 모든 훈련 세트를 활용한다는 의미한다.(보편적인 batch와는 다른 의미이지만 혼용해서 사용한다.)
+* 즉, 매 단계마다 모든 훈련 세트를 활용한다는 의미이며, 실제로 이 알고리즘에서 미분계수를 계산할 때, 모든 훈련세트에 대하여 계산하고 있다. 모든 데이터 세트를 사용하지 않는 알고리즘도 존재한다.
+![Uploading image.png…]()
