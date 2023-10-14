@@ -28,7 +28,7 @@ x=np.array([10, 20, 30])# w[0]=10, w[1]=20, w[2]=30
 f=np.dot(w, x)+b
 ```
 #### 만약 벡터화 없이 코드를 짠다면...
-$f_{\overrightarrow{w}, b}(\overright{x})=\sum_{j=1}^{n}w_jx_j+b$
+$f_{\overrightarrow{w}, b}(\overrightarrow{x})=\sum_{j=1}^{n}w_jx_j+b$
 ```python
 f=w[0]*x[0]+w[1]*x[1]+w[2]*x[2]+b
 ```
