@@ -92,4 +92,8 @@ Feature Scailing의 개념은 서로 다른 요소라도 비슷하거나 같은 
 * $price=w_1x_1+w_2x+2+b$
     * $x_1$=size(feet^2), range: 300~2000
     * $x_2$=number of bedrooms, range: 0~5
-$ House: $x_1=2000$, $x_2=5$, price=\$500k
+* House: $x_1=2000$, $x_2=5$, price=\$500k
+
+### 매개변수들의 크기
+#### w1=50, w2=0.1, b-50
+$price=50\*2000+0.1\*5+50=\$100050.5k$
