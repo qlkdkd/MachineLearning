@@ -49,3 +49,23 @@ f=f+b
 $$\overrightarrow{w}=(w_1, w_2, ..., w_16)$$
 미분계수
 $$\overrightarrow{d}=(d_1, d_2, ..., d_16)$$
+```python
+w=np.array([0.5, 1.3, ..., 3.4])
+d=np.array([0.3, 0.2, ..., 0.4])
+```
+compute $w_j=w_j-0.1d_j$ for $f=1...16$
+
+#### 벡터화 없이 계산
+```python
+w1=w1-0.1*d1
+w2=w2-0.1*d2
+...
+w16=w16-0.1*d16
+```
+#### 벡터화로 계산
+```python
+w=w-0.1*d
+```
+
+---
+
