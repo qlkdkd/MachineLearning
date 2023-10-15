@@ -35,6 +35,7 @@ $$f_{\overrightarrow{w}, b}(\overrightarrow{x})=g(\overrightarrow{w}\cdot\overri
 이 가설함수의 출력값은 주어진 입력값 x에 대해서 y가 1일 확률을 의미한다.
 만약 $f(x)=0.7$이면, 해당 입력값이 악성 종양일 확률이 70%이라는 의미다.
 일반적으로 다음과 같이 표현한다.
+
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/b3a615a4-b414-41b3-b1a8-9287caf50b4f)
 
 또한 $f(x)=0.7$을 거꾸로 말하면 양성 종양일 확률이 30%라는 의미이며, 일반적으로 $f(x)=P(y=9|x;\overrightarrow{w}, b)$로 표현한다.
