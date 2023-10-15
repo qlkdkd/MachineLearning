@@ -103,3 +103,35 @@ Feature Scailing의 개념은 서로 다른 요소라도 비슷하거나 같은 
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/f5c24c1b-ae2d-4757-b4e6-7cb3540cb350)
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/0224987b-0230-4d95-ad26-c07a10c5cacd)
 * 위의 그림을 보면 예제 1을 보면 2개의 요소가 갖는 범위의 차이가 많이 나서 비용함수는 많이 찌그러진 타원의 모양을 갖게 되며, Global optima를 구하는데 오랜 시간이 걸리게 된다. 하지만 오른쪽 예제 2에서는 각 요소의 값(범위)를 최댓값이나 최댓값-최솟값 등과 같은 값으로 나누어진 값으로 치환하여 계산하면 비용함수의 그래프는 원에 가까운 모양이 될 것이고, 더 적은 선형하강법 연산으로 Global Optima를 찾을 수 있다.
+
+# Checking Gradient Descent for Convergence
+### 경사하강법
+$$w_j=w_j-\alpha-\frac{\partial}{\partial w_j}J(\overrightarrow{w}, b)$$
+$$b=b-\alpha-\frac{\partial}{partial b}J(\overrightarrow{w}, b)$$
+
+### 정확히 작동하고 있는 경사하강법을 확실하게 하기\
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/f20ba301-e67e-4bff-ba64-9e4ace048fb3)
+* 목표: $min_{\overightarrow{w}, b}, b}J(\overrightarrow{w}, b)$, $J(\overrightarrow{w}, b)$는 모든 반복 후 감소해야 한다.
+* $J(\overrightarrow{w}, b)$는 숫자가 증가할수록 0에 수렴
+
+#### 자동수렴 테스트
+* $\epsilon=0.001$로 가정함
+* 만약 $J(\overrightarrow{w}, b)$가 한 번의 반복에서 $\epsilon$만큼 감소하면 수렴을 선언함(광역 최솟값의 근삿값을 찾기 위한 매개변수 $\overrightarrow{w}, b$를 찾아야 함)
+
+# Choosing the Learning Rate
+이번에 우리는 디버깅(Debuggin) 작업을 통해 Gradient Descent가 적절하게 동작하기 위한 방법과 Learning Rate를 선택하는 방법에 대해서 알아볼 것이다. 이전에 배웠듯이 Gradient Descent의 역할은 Cost Function J를 최소화하는 파라미터를 찾는 것이며, 이것에 대한 디버깅 작업은 Gradient Descent를 적용할 때마다 변화하는 Cost Function J(\overrightarrow{w}, b)를 그래프로 그리면서 올바르게 감소하는지 확인하는 작업이다. Gradient Descent가 올바르게 동작한다면 그래프는 아래와 같은 모양이 될 것이다.
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/743ec032-1540-4692-9fa0-8474f36fd616)
+
+* 비용함수가  진동하거나 양의 방향으로 상승하는 경우, 학습률이 너무 큰 것이다.
+* 비용함수가 충분히 작은 경우, 학습률과 비용함수는 모든 반복에서 감소해야 한다.
+* 만약 학습률이 너무 작으면, 경사하강법은 한 점에 모이기 위해 수많은 반복을 해야한다.
+
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/f206088f-2eef-4c4b-89cf-89cb4d3df827)
+위 그래프처럼 매 경사하강법(매 반복)마다 비용함수의 값은 감소해야 한다. 그리고 반복이 진행될 수록 비용함수의 기울기는 0으로 수렴하게 될 것이다. 보통 몇 번의 반복이 필요한 지 알 수 없으므로 보통은 그래프를 그리며 수렴하는지를 확인한다. 또한, 수렴하는지 아닌지 자동으로 검사하는 알고리즘인 자동 수렴 테스트를 사용하여 수렴 여부를 파악할 수도 있다.
+
+# Feature Engineering
+이번에는 Feature를 간단하게 선택하는 방법과 적절한 feature의 선택으로 강력한 학습 알고리즘을 만드는 방법에 대해서 알아보자.
+### 기능 엔지니어링
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/d9b957a7-e4ee-4c3e-b77a-4ebfe346010b)
+$$
