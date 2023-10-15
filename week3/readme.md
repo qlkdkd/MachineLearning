@@ -134,4 +134,16 @@ $$b=b-\alpha-\frac{\partial}{partial b}J(\overrightarrow{w}, b)$$
 이번에는 Feature를 간단하게 선택하는 방법과 적절한 feature의 선택으로 강력한 학습 알고리즘을 만드는 방법에 대해서 알아보자.
 ### 기능 엔지니어링
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/d9b957a7-e4ee-4c3e-b77a-4ebfe346010b)
-$$
+* $f_{\overrightarrow{w}, b}(\overrightarrow{x})=w_1x_1+w_2x_2+b$($x_1$=가로길이, $x_2$=세로길이)
+* $x_3=x_1x_2$, ($x_3$=넓이=가로*세로)
+* 기능 엔지니어링: 직관을 사용하여 원래 기능을 변환하거나 결합하여 새로운 기능을 설계합니다.
+
+# Polynomial Regression
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/3e3c3e4c-58b6-466b-a68d-73b640142938)
+위와 같은 데이터 세트는 선형으로 표현하기에는 어려움이 있다. 이 데이터 세트를 표현할 수 있는 다른 모델들이 있는데, 그 중 하나는 2차 함수 모델로 표현할 수 있다. 하지만 2차 함수 모델은 최대값을 찍고 감소하는 형태이기 때문에, 집의 크기가 일정 크기 이상으로 커지면 집값이 감소하는 이상한 모델이 된다. 이는 데이터 세트와 잘 맞지 않을 것이다.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/14145c2c-31d3-4880-befb-057e3ede6b6f)
+비슷한 방식으로 제곱근 형태의 요소도 만들 수 있다.
+
+주의할 점은 이렇게 요소를 만들면 feature scailing이 더 중요해진다는 것이다. 예를 들어, $x$의 원래 범위가 1~1000이였다면, 2차항의 범위는 10^6, 3차항의 범위는 10^9이 된다.
+
+
