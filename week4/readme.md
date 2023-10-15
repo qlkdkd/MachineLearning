@@ -111,3 +111,11 @@ y는 오직 1 또는 0이라는 값만 가지므로, 나누어져 있는 비용�
 
 # Gradient Descent Implementation
 $$J_{\vec{w}, b}=-\frac{1}{m}\sum_{i=1}^{m}[y^{(i)}log(f_{\vec{w}, b}(\vec{x}^{(i)}))+(1-y^{(i)})log(1-f_{\vec{w}, b}(x^{(i)}))]$$
+
+이 비용함수가 최소화하는 매개변수 w, b를 찾는 것이 목적이다. $J(\vec{w}, b)$가 convex이므로, 경사하강법을 통해 최적의 w, b를 찾을 수 있다.
+
+반복{
+$$w_j=w_j-\alpha\frac{\partial}{\partial w_j}J(\vec{w}, b)=\frac{1}{m}\sum_{i=1}^{m}(f_{\vec{w}, b}(\vec{x}^{(i)})-y^{(i)})x^{(j)}$$
+$$b=b-\alpha\frac{\partial}{\partial b}J(\vec{w}, b)=\frac{1}{m}\sum_{i=1}^{m}(f_{\vec{w}, b}(\vec{x}^{(i)})-y^{(i)})$$
+} 계속 업데이트
+
