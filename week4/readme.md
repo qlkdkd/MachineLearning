@@ -81,7 +81,9 @@ else: y=0
 앞에서 배웠던 선형 회귀를 위한 비용함수는 $J(w, b)=\frac{1}{2m}\sum_{i=1}{m}(f_{w, b}(x^{(i)})-y^{(i)})$이며, 우리는 아래와 같이 표현할 수도 있다.
 $$J(\overrightarrow{w}, b)=\frac{1}{2m}\sum_{i=1}{m}(f_{\overrightarrow{w}, b}(x^{(i)})-y^{(i)})^2$$
 
-로지스틱 회귀 문제를 위해 $f_{\overrightarrow{w}, b}(\overrightarrow{x})=\frac{1}{1+e^{-(\overrightarrow{w}\cdot\overrightarrow{x}+b)$를 대입하면 문제가 없을 것 같지만, 우리는 이 비용함수를 사용할 수 없다. 왜냐하면, 위의 과정으로 대입한 비용함수 $J(\overrightarrow{w}, b)$는 볼록함수가 아니기 때문이다.
+로지스틱 회귀 문제를 위해 
+$f_{\overrightarrow{w}, b}(\overrightarrow{x})=\frac{1}{1+e^{-(\overrightarrow{w}\cdot\overrightarrow{x}+b)$
+를 대입하면 문제가 없을 것 같지만, 우리는 이 비용함수를 사용할 수 없다. 왜냐하면, 위의 과정으로 대입한 비용함수 $J(\overrightarrow{w}, b)$는 볼록함수가 아니기 때문이다.
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/ad301e1f-1623-4e3f-be25-a6d395a01590)
 
 선형 회귀에서의 비용함수는 볼록함수 구조로 경사하겅법을 연산하면 수렴하면서 최솟값을 찾을 수 있었지만, 로지스틱 회귀에서는 많은 극소점을 가지기 때문에 최솟값을 보장할 수 없다. 따라서 우리는 로지스틱 회귀를 위한 비용함수를 다음과 같이 정의한다.
