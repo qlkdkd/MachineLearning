@@ -18,6 +18,8 @@ if (f(w, b)<0.5): y=0
 
 따라서 우리는 분류 문제를 해결하기 위해 선형회귀가 아닌 로지스틱 회귀에 대해서 배울 것이고, 이는 가설 함수가 0과 1 사이의 값만 취할 수 있도록 한다.
 
+---
+
 # Logistic Regression
 우리는 로지스틱 회귀의 표현 모델에 대해서 알아볼 것이다. 앞서 말했듯이 로지스틱 회귀의 가설 함수는 0과 1사이의 값만 내보내는 형태가 되어야 한다.
 즉, $0<=ff_{w, b}(x)<=1$의 조건을 만족해야 한다.
@@ -26,3 +28,17 @@ if (f(w, b)<0.5): y=0
 따라서 로지스틱 회귀에서는 $f_{w, b}(x)=g((w, b)x)$로 가설함수를 표현한다. 여기서 $g(z)=\frac{1}{1+e^{-z}}$이며, 정리하여 나타내면 아래와 같다.
 
 $$f_{\overrightarrow{w}, b}(\overrightarrow{x})=g(\overrightarrow{w}\cdot\overrightarrow{x}+b)=\frac{1}{1+e^{-(\overrightarrow{w}\cdot\overrightarrow{x}+b)}}$$
+
+이 그래프는 0과 1 사이의 값으로만 표현되며, 시그모이드 함수 또는 로지스틱 함수라고도 불린다.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/e22acefb-f685-4f02-bbb6-b5ebfabbb1e8)
+
+이 가설함수의 출력값은 주어진 입력값 x에 대해서 y가 1일 확률을 의미한다.
+만약 $f(x)=0.7$이면, 해당 입력값이 악성 종양일 확률이 70%이라는 의미다.
+일반적으로 다음과 같이 표현한다.
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/b3a615a4-b414-41b3-b1a8-9287caf50b4f)
+
+또한 $f(x)=0.7$을 거꾸로 말하면 양성 종양일 확률이 30%라는 의미이며, 일반적으로 $f(x)=P(y=9|x;\overrightarrow{w}, b)$로 표현한다.
+
+---
+
+# Decision Boundary
