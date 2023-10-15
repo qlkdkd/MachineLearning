@@ -122,6 +122,8 @@ $$b=b-\alpha\frac{\partial}{\partial b}J(\vec{w}, b),
 (\frac{\partial}{\partial b}J(\vec{w}, b)=\frac{1}{m}\sum_{i=1}^{m}(f_{\vec{w}, b}(\vec{x}^{(i)})-y^{(i)})))$$
 } 계속 업데이트
 
-수식은 선형회귀의 경사하강법과 동일하다 다만, 가설함수는 $f_{\vec{w}, b}(\vec{x})=\frac{1}{1+e^{-(\vec{w}\cdot\vec{x}+b)}$이다.
+수식은 선형회귀의 경사하강법과 동일하다 다만, 가설함수는 
+$f_{\vec{w}, b}(\vec{x})=\frac{1}{1+e^{-(\vec{w}\cdot\vec{x}+b)}}$
+이다.
 그리고 $\frac{\partial}{\partial (w_j, b)}$를 계산하면 아래와 같다.
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/7b035c74-c5b2-4738-a0e9-b4bbcf1c1283)
