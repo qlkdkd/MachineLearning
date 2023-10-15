@@ -82,7 +82,7 @@ else: y=0
 $$J(\overrightarrow{w}, b)=\frac{1}{2m}\sum_{i=1}{m}(f_{\overrightarrow{w}, b}(x^{(i)})-y^{(i)})^2$$
 
 로지스틱 회귀 문제를 위해 
-$f_{\overrightarrow{w}, b}(\overrightarrow{x})=\frac{1}{1+e^{-(\overrightarrow{w}\cdot\overrightarrow{x}+b)}$
+$f_{\overrightarrow{w}, b}(\overrightarrow{x})=\frac{1}{1+e^{-(\overrightarrow{w}\cdot\overrightarrow{x}+b)}}$
 를 대입하면 문제가 없을 것 같지만, 우리는 이 비용함수를 사용할 수 없다. 왜냐하면, 위의 과정으로 대입한 비용함수 $J(\overrightarrow{w}, b)$는 볼록함수가 아니기 때문이다.
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/ad301e1f-1623-4e3f-be25-a6d395a01590)
 
@@ -106,3 +106,8 @@ y는 오직 1 또는 0이라는 값만 가지므로, 나누어져 있는 비용�
 정리하면 아래와 같이 비용함수를 구할 수 있다.
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/ba40b36b-56fa-4b1e-b7da-cb6825b1f897)
 우리는 $J(\overrightarrow{w}, b)$를 최소로 만드는 최적의 w, b를 찾고, 이후에 새롭게 주어진 입력값 x를 어떤 클래스로 분류할지 판단하려면 $f_{\overrightarrow{w}, b}(\overrightarrow{x})=\frac{1}{1+e^{-(\overrightarrow{w}\cdot\overrightarrow{x}+b)}}$의 값이 0.5 보다 큰지 작은지 확인하면 된다.
+
+---
+
+# Gradient Descent Implementation
+$$J_{\vec{w}, b}=-\frac{1}{m}\sum_{i=1}^{m}[y^{(i)}log(f_{\vec{w}, b}(\vec{x}^{(i)}))+(1-y^{(i)})log(1-f_{\vec{w}, b}(x^{(i)}))]$$
