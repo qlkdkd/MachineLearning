@@ -44,6 +44,7 @@
 ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/f88a561c-32ed-4c1a-ad23-e10f0325f69e)
 
 **1. g(z)는 +1 근처이다.**
+
 2. g(z)는 0 근처이다.
 3. g(z)는 -1 근처이다.
 4. g(z)는 0.5 근처이다.
