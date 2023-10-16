@@ -12,9 +12,9 @@
 
  ---
 
-2. ![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/e6acec79-2646-42b9-8a52-97a9e58728b6)
+2. 어떤 것이 올바른 업데이트 단계인가?
 
-어떤 것이 올바른 업데이트 단계인가?
+![image](https://github.com/qlkdkd/MachineLearning/assets/71871927/e6acec79-2646-42b9-8a52-97a9e58728b6)
 
   **a. 업데이트 단계에는 선형 회귀의 업데이트 단계와 유사하지만, $f_{\vec{w}, b}(x^{(i)})$의 정의와는 다르다.**
   
